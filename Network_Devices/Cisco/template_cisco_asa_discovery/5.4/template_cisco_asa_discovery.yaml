@@ -224,7 +224,7 @@ zabbix_export:
               value: 'VPN RemoteAccess'
         -
           uuid: 2a2de30d7ff641308f5c8019275bdc2f
-          name: 'ROMMON Versoin'
+          name: 'ROMMON Version'
           type: SNMP_AGENT
           snmp_oid: 'ENTITY-MIB::entPhysicalFirmwareRev.1'
           key: entPhysicalFirmwareRev
@@ -452,7 +452,7 @@ zabbix_export:
             conditions:
               -
                 macro: '{#SNMPVALUE}'
-                value: '@Firewalls network interfaces for discovery'
+                value: '128.210.151.0/24-HHS-DC-Outside|128.210.151.000/24-HHS-DC-Inside|172.30.19.0/24-Inside|172.30.19.0/24-Outside'
                 formulaid: A
           lifetime: 14d
           item_prototypes:
